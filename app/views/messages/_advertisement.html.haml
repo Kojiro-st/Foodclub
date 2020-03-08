@@ -3,9 +3,11 @@
     Foodclub
   .header_right
     .header_right__shop
-      shop
+      = link_to new_admin_session_path, class: "btn" do
+        shop
     .header_right__customer
-      customer
+      = link_to new_user_session_path, class: "btn" do
+        customer
 .top-content
   .top-content_left
     .top-content_left__big
